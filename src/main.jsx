@@ -971,7 +971,6 @@ function AuthModal({ close, setAuth, setNotice }) {
         <button type="button" className="link-button" onClick={() => setMode(mode === 'login' ? 'register' : 'login')}>
           {mode === 'login' ? 'Need an account?' : 'Already registered?'}
         </button>
-        <p className="hint">Admin access: umarxgamer04@gmail.com / Admin@12345</p>
       </form>
     </div>
   );
