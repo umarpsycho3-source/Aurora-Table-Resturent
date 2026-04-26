@@ -125,7 +125,8 @@ const FALLBACK_MENU = [
 }));
 
 const openWhatsApp = (message) => {
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+  const phone = String(WHATSAPP_NUMBER).replace(/\D/g, '');
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
 };
 
 const api = async (path, options = {}, token) => {
