@@ -24,7 +24,7 @@ import {
 } from 'lucide-react';
 import './styles.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://127.0.0.1:5000/api' : '/api');
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '971813023';
 const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL || 'umarxgamer04@gmail.com';
 const DISPLAY_PHONE = '+97 181 3023';
