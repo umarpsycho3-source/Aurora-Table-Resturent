@@ -25,9 +25,9 @@ import {
 import './styles.css';
 
 const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://127.0.0.1:5000/api' : '/api');
-const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '971813023';
+const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '94771813023';
 const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL || 'umarxgamer04@gmail.com';
-const DISPLAY_PHONE = '+97 181 3023';
+const DISPLAY_PHONE = '+94 77 181 3023';
 const LKR_PER_USD = Number(import.meta.env.VITE_LKR_PER_USD || 300);
 
 const getStoredCurrency = () => localStorage.getItem('currency') === 'LKR' ? 'LKR' : 'USD';
